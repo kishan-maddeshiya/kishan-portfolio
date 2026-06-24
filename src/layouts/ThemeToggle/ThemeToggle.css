@@ -1,0 +1,35 @@
+.theme-toggle {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--border-color);
+
+    background: var(--surface-color);
+
+    color: var(--text-primary);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    transition: .3s ease;
+
+}
+
+.theme-toggle:hover {
+
+    border-color: var(--primary-color);
+
+    transform: rotate(20deg);
+
+}

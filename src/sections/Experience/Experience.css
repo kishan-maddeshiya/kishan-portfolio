@@ -1,0 +1,247 @@
+/* ===========================
+   Experience Section
+=========================== */
+
+.experience {
+    padding: 120px 0;
+}
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* ===========================
+   Timeline
+=========================== */
+
+.experience-timeline {
+    max-width: 900px;
+    margin: auto;
+    border-left: 2px solid var(--border-color);
+    padding-left: 40px;
+    min-width: 0;
+}
+
+.experience-timeline h3,
+.experience-timeline p,
+.experience-timeline span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.experience-dot {
+    position: absolute;
+    left: -50px;
+    top: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.experience-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.experience-duration {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.experience-card h3 {
+    margin: 12px 0;
+}
+
+.experience-card h4 {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+/* ===========================
+   Company Header
+=========================== */
+
+.experience-company {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.experience-company h4 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.experience-duration {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ===========================
+   Tech Stack
+=========================== */
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 22px;
+}
+
+.tech-badge {
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===========================
+   Experience Metrics
+=========================== */
+
+.experience-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.metric-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 28px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, .15);
+}
+
+.metric-card h3 {
+    font-size: 38px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+/* ===========================
+   Experience CTA
+=========================== */
+
+.experience-cta {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 24px;
+}
+
+.experience-cta h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.experience-cta p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+}
+
+.experience-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:576px) {
+    .experience-company {
+        align-items: flex-start;
+    }
+
+    .company-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .experience-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-cta {
+        padding: 35px 20px;
+    }
+
+    .experience-cta h3 {
+        font-size: 26px;
+    }
+
+    .experience-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:992px) {
+    .experience-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

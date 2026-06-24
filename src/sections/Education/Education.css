@@ -1,0 +1,446 @@
+/* ===================================
+   Education Section
+=================================== */
+
+.education-section {
+    padding: 120px 0;
+}
+
+.education-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.education-content {
+    margin-top: 40px;
+}
+
+/* ===================================
+   Education Timeline
+=================================== */
+
+.education-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 35px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -45px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 4px solid var(--bg-color);
+}
+
+.timeline-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 28px;
+    transition: all .35s ease;
+}
+
+.timeline-card:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, .15);
+}
+
+.timeline-duration {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.timeline-card h3 {
+    margin: 12px 0 8px;
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
+.timeline-card h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+.timeline-score {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.timeline-card p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   Timeline Reveal Animation
+=================================== */
+
+.timeline-item {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.timeline-item.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* ===================================
+   Education Statistics
+=================================== */
+
+.education-stats {
+
+    margin-top: 80px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+}
+
+.education-stat-card {
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 18px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    transition: all .35s ease;
+
+}
+
+.education-stat-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 15px 35px rgba(37, 99, 235, .15);
+
+}
+
+.education-stat-card h3 {
+
+    font-size: 38px;
+
+    color: var(--primary-color);
+
+    margin-bottom: 10px;
+
+}
+
+.education-stat-card p {
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+
+}
+
+
+
+/* ===================================
+   Certifications
+=================================== */
+
+.certificates {
+
+    margin-top: 90px;
+
+}
+
+.certificate-heading {
+
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 50px;
+
+    color: var(--text-primary);
+
+}
+
+.certificate-grid {
+
+    display: grid;
+
+    gap: 25px;
+
+}
+
+.certificate-card {
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: all .35s ease;
+
+}
+
+.certificate-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 15px 35px rgba(37, 99, 235, .15);
+
+}
+
+.certificate-card h3 {
+
+    margin-bottom: 10px;
+
+    color: var(--text-primary);
+
+}
+
+.certificate-issuer {
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.certificate-date {
+
+    color: var(--text-secondary);
+
+}
+
+.certificate-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+}
+
+@media (max-width:992px) {
+
+
+
+    .education-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .education {
+        padding: 100px 0;
+    }
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline-dot {
+        left: -34px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-card h4 {
+        font-size: 22px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+
+
+    .education-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .education {
+
+        padding: 70px 0;
+
+    }
+
+    .education-title {
+
+        font-size: 30px;
+
+    }
+
+    .timeline {
+
+        padding-left: 14px;
+
+    }
+
+    .timeline-dot {
+
+        left: -23px;
+
+        width: 12px;
+
+        height: 12px;
+
+    }
+
+    .timeline-card {
+
+        padding: 16px;
+
+    }
+
+    .timeline-card h4 {
+
+        font-size: 18px;
+
+    }
+
+    .timeline-card h5 {
+
+        font-size: 15px;
+
+    }
+
+    .timeline-duration {
+
+        font-size: 13px;
+
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .certificate-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .education {
+        padding: 80px 0;
+    }
+
+    .education-header {
+        margin-bottom: 50px;
+    }
+
+    .education-title {
+        font-size: 34px;
+    }
+
+    .timeline {
+
+        padding-left: 18px;
+
+    }
+
+    .timeline-dot {
+
+        left: -28px;
+
+        width: 14px;
+
+        height: 14px;
+
+    }
+
+    .timeline-card {
+
+        padding: 18px;
+
+    }
+
+    .timeline-card h4 {
+
+        font-size: 20px;
+
+    }
+
+    .timeline-card h5 {
+
+        font-size: 16px;
+
+    }
+}
+
+@media (hover:none) {
+
+    .timeline-card:active {
+
+        transform: scale(.98);
+
+        border-color: var(--primary-color);
+
+    }
+
+}
