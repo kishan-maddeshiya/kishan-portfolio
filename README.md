@@ -1,16 +1,111 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Kishan Maddeshiya Portfolio
 
-Currently, two official plugins are available:
+A modern, responsive, and professional portfolio website built with React.js and Vite to showcase my skills, projects, experience, and contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+Coming Soon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+* Responsive Design
+* Dark / Light Theme Toggle
+* Smooth Scrolling Navigation
+* Project Showcase
+* Skills Section with Filtering
+* Experience Timeline
+* Contact Form with EmailJS
+* Resume Download
+* SEO Optimized
+* Mobile Friendly UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* JavaScript
+* CSS3
+
+### Libraries
+
+* React Icons
+* React Scroll
+* Framer Motion
+* EmailJS
+* React Type Animation
+
+## 📂 Project Structure
+
+```text
+src
+├── assets
+├── components
+├── constants
+├── contexts
+├── layouts
+├── sections
+├── styles
+├── utils
+├── App.jsx
+└── main.jsx
+```
+
+## 📸 Screenshots
+
+Add portfolio screenshots here after deployment.
+
+## 📧 Contact
+
+Email: [kishanmaddeshiya03@gmail.com](mailto:kishanmaddeshiya03@gmail.com)
+
+LinkedIn:
+https://www.linkedin.com/in/kishan-maddeshiya-9816a7255/
+
+GitHub:
+https://github.com/kishan-maddeshiya
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kishan-maddeshiya/kishan-portfolio.git
+```
+
+Navigate to project:
+
+```bash
+cd kishan-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 👨‍💻 Author
+
+Kishan Maddeshiya
+
+Full Stack .NET Developer | React.js Developer
+
+---
+
+Built with ❤️ using React.js and Vite
